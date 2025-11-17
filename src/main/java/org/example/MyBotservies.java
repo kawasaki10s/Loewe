@@ -8,14 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotservies {
-    // Text jonatish uchun
 
-
-
-
-
-
-    // InlineButtonlarr Uchun
     public SendMessage uzLangMenu(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -56,8 +49,4 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-
-
-
-    // ReplyButton Uchun
 }
