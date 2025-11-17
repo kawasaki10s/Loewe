@@ -9,12 +9,17 @@ public class MyBot extends TelegramLongPollingBot {
 
     @Override
     public void onUpdateReceived(Update update) {
+        if (update.hasMessage() && update.getMessage().hasText()) {
+            Long chatId = update.getMessage().getChatId();
+            String text = update.getMessage().getText();
 
+
+        }
     }
 
     @Override
     public String getBotUsername() {
-        return "@Looewe_bot";
+        return "Looewe_bot";
     }
 
     @Override
