@@ -8,7 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotservies {
+    // text yozw uchun
 
+
+
+
+
+
+
+
+
+    //inline buttonlar uchun
     public SendMessage uzLangMenu(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -49,4 +59,18 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // reply button uchun
 }
