@@ -2,6 +2,7 @@ package org.example;
 
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.objects.Update;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class MyBot extends TelegramLongPollingBot {
     MyBotservies myBotservies = new MyBotservies();
@@ -19,7 +20,13 @@ public class MyBot extends TelegramLongPollingBot {
 
 
             // Text korishida javob kelsa
-
+            if(text.equals("/start")){
+                try {
+                    execute(myBotservies.uzLangMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
         }
     }
