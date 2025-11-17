@@ -15,6 +15,7 @@ public class MyBotservies {
 
 
 
+
     // InlineButtonlarr Uchun
     public SendMessage uzLangMenu(Long chatId){
         SendMessage sendMessage = new SendMessage();
