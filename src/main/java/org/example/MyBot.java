@@ -35,7 +35,25 @@ public class MyBot extends TelegramLongPollingBot {
             String data = callbackQuery.getData();
             Long chatId = callbackQuery.getMessage().getChatId();
 
-            //O'zbekcha menyu
+            //data kornshida javob kelsa
+
+
+
+
+
+            //uzbeca
+
+
+
+
+
+            //ruschaa
+
+
+
+
+
+            //inglisch
         }
     }
 
