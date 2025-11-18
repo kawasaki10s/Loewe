@@ -155,7 +155,7 @@ public class MyBotservies {
     }
 
     //Oz kiyimlar baggys
-    public SendMessage BaggyMenu(Long chatId){
+    public SendMessage BaggyMenu(Long chatId)   {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Baggy menyu tanlang");
