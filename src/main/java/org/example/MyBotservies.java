@@ -40,28 +40,21 @@ public class MyBotservies {
         //
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
-        button1.setText("");
+        button1.setText("\uD83D\uDCC8 Hamkorlik");
         row1.add(button1);
         rowList.add(row1);
 
         //
         KeyboardRow row2 = new KeyboardRow();
         KeyboardButton button2 = new KeyboardButton();
-        button2.setText("");
+        button2.setText("\uD83D\uDCAC Izoh Qoldirish");
         row2.add(button2);
         rowList.add(row2);
 
         //
         KeyboardButton button3 = new KeyboardButton();
-        button3.setText("");
+        button3.setText("\uD83C\uDDFA\uD83C\uDDFF Tilni tanlash");
         row2.add(button3);
-
-        //
-        KeyboardRow row3 = new KeyboardRow();
-        KeyboardButton button4 = new KeyboardButton();
-        button4.setText("");
-        row3.add(button4);
-        rowList.add(row3);
 
         replyKeyboardMarkup.setResizeKeyboard(true);
         replyKeyboardMarkup.setKeyboard(rowList);
@@ -80,6 +73,15 @@ public class MyBotservies {
 
 
     //inline buttonlar uchun
+
+
+
+
+
+
+
+
+
 
     // O'zbekcha tilni tanlash menyusi
     public SendMessage uzLangMenu(Long chatId){
@@ -115,6 +117,80 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
+
+
+    //oz kiyimlar menuu
+    public SendMessage UzKiyimlarMenu(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Kiyimlar Bolimi Styleni Tanlang");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDC56 baggy");
+        button.setCallbackData("BaggyOzId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button.setText("\uD83E\uDDE5 Classic");
+        button.setCallbackData("ClassicOzId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83E\uDE73 New Money");
+        button.setCallbackData("newmoneyOzId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
+    //Oz kiyimlar baggys
+    public SendMessage BaggyMenu(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Baggy menu ");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDC56 baggy");
+        button.setCallbackData("BaggyOzId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button.setText("\uD83E\uDDE5 Classic");
+        button.setCallbackData("ClassicOzId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83E\uDE73 New Money");
+        button.setCallbackData("newmoneyOzId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
+
+    //end uz
 
 
 
