@@ -158,7 +158,7 @@ public class MyBotservies {
     public SendMessage BaggyMenu(Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Baggy menu ");
+        sendMessage.setText("Baggy menyu tanlang");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -166,21 +166,28 @@ public class MyBotservies {
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
         button = new InlineKeyboardButton();
-        button.setText("\uD83D\uDC56 baggy");
-        button.setCallbackData("BaggyOzId");
+        button.setText("Hoodie");
+        button.setCallbackData("BaggyHoodieId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
-        button.setText("\uD83E\uDDE5 Classic");
-        button.setCallbackData("ClassicOzId");
+        button.setText("\uD83D\uDC56Shimlara");
+        button.setCallbackData("BaggyShimId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("\uD83E\uDE73 New Money");
-        button.setCallbackData("newmoneyOzId");
+        button.setText("\uD83D\uDC55Fudbolkalar");
+        button.setCallbackData("BaggyFudbolkaId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83E\uDD7CVeitrovka");
+        button.setCallbackData("BaggyVeitrovkaId");
         row.add(button);
         rowList.add(row);
 
