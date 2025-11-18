@@ -41,9 +41,14 @@ public class MyBot extends TelegramLongPollingBot {
 
 
 
-
             //uzbeca
-
+            if (data.equals("O'zbekchaId")){
+                try {
+                    execute(myBotservies.uzLangMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
 
