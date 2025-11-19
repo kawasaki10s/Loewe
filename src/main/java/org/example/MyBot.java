@@ -52,7 +52,7 @@ public class MyBot extends TelegramLongPollingBot {
             //uzbeca
 
             // O'zbekcha menyu
-            if (data.equals("OzbekchaId")){
+            if (data.equals("O'zbekchaId")){
                 try {
                     execute(myBotservies.uzMain(chatId));
                     execute(myBotservies.uzMainMenu(chatId));
@@ -60,9 +60,9 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if (data.equals("BaggyOzId")){
+            if (data.equals("uzBaggyId")){
                 try {
-                    execute(myBotservies.uzBaggyStyle(chatId));
+                    execute(myBotservies.uzBaggyMenu(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

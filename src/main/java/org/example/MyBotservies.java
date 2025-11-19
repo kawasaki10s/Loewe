@@ -15,14 +15,15 @@ public class MyBotservies {
     // text yozw uchun
 
     // O'zbekcha menyu
-    public SendMessage uzMain (Long chatId){
+    public SendMessage uzMain(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Ushbu bot sizga 'Loewe' haqida kerakli ma'lumotlarni topishga va sizga kerakli mahsulotlarni topishga yordam beradi.");
         return sendMessage;
     }
+
     // O'zbekcha menyu
-    public SendMessage uzMainMenu (Long chatId){
+    public SendMessage uzMainMenu(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Menyuni tanlang:");
@@ -30,7 +31,7 @@ public class MyBotservies {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
 
-        // 👔 Kiyimlar
+        //👔 Kiyimlar
         KeyboardRow row = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
         button.setText("\uD83D\uDC54 Kiyimlar");
@@ -52,9 +53,12 @@ public class MyBotservies {
         rowList.add(row2);
 
         //
+        //
+        KeyboardRow row3 = new KeyboardRow();
         KeyboardButton button3 = new KeyboardButton();
         button3.setText("\uD83C\uDDFA\uD83C\uDDFF Tilni tanlash");
-        row2.add(button3);
+        row3.add(button3);
+        rowList.add(row3);
 
         replyKeyboardMarkup.setResizeKeyboard(true);
         replyKeyboardMarkup.setKeyboard(rowList);
@@ -63,44 +67,27 @@ public class MyBotservies {
     }
 
 
-
-
-
-
-
-
-
-
-
     //inline buttonlar uchun
 
 
-
-
-
-
-
-
-
-
     // O'zbekcha tilni tanlash menyusi
-    public SendMessage uzLangMenu(Long chatId){
+    public SendMessage uzLangMenu(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("'Loewe' botiga xush kelibsiz!\nTilni tanlang:'");
+        sendMessage.setText("'Loewe' botiga xush kelibsiz!\nTilni tanlang:");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
-        button = new InlineKeyboardButton();
         button.setText("O'zbekcha \uD83C\uDDFA\uD83C\uDDFF");
         button.setCallbackData("O'zbekchaId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Русский \uD83C\uDDF7\uD83C\uDDFA");
         button.setCallbackData("РусскийId");
         row.add(button);
@@ -118,11 +105,50 @@ public class MyBotservies {
         return sendMessage;
     }
 
+    // Kiyimlar stylelari menyusi
+    public SendMessage uzKiyimlarMenu(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Kiyimlar bolimi stilini tanlang:");
 
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDC56 Baggy");
+        button.setCallbackData("uzBaggyId");
+        row.add(button);
+        rowList.add(row);
 
-    //oz kiyimlar menuu
-    public SendMessage UzKiyimlarMenu(Long chatId){
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83E\uDDE5 Classic");
+        button.setCallbackData("uzClassicId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83E\uDE73 New Money");
+        button.setCallbackData("uzNewMoneyId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzKiyimlarOrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
+    // Kiyimlar stylelari menyusi >> Baggy menu
+    public SendMessage uzBaggyMenu(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Kiyimlar Bolimi Styleni Tanlang");
@@ -132,22 +158,36 @@ public class MyBotservies {
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
-        button = new InlineKeyboardButton();
-        button.setText("\uD83D\uDC56 baggy");
-        button.setCallbackData("BaggyOzId");
-        row.add(button);
-        rowList.add(row);
-
-        row = new ArrayList<>();
-        button.setText("\uD83E\uDDE5 Classic");
-        button.setCallbackData("ClassicOzId");
+        button.setText("\uD83D\uDC58 Hoodie");
+        button.setCallbackData("uzBaggyHoodieId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("\uD83E\uDE73 New Money");
-        button.setCallbackData("newmoneyOzId");
+        button.setText("\uD83D\uDC56 Shimlar");
+        button.setCallbackData("uzBaggyShimlarId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDC55 Fudbolkalar");
+        button.setCallbackData("uzBaggyFutbolkalarId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83E\uDD7C Veitrovkalar");
+        button.setCallbackData("uzBaggyVitrovkalar");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzBaggyOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -155,65 +195,9 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-
-    //Oz kiyimlar baggys
-    public SendMessage BaggyMenu(Long chatId)   {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Baggy menyu tanlang");
-
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
-
-        List<InlineKeyboardButton> row = new ArrayList<>();
-        InlineKeyboardButton button = new InlineKeyboardButton();
-        button = new InlineKeyboardButton();
-        button.setText("Hoodie");
-        button.setCallbackData("BaggyHoodieId");
-        row.add(button);
-        rowList.add(row);
-
-
-        row = new ArrayList<>();
-        button.setText("\uD83D\uDC56Shimlara");
-        button.setCallbackData("BaggyShimId");
-        row.add(button);
-        rowList.add(row);
-
-        row = new ArrayList<>();
-        button = new InlineKeyboardButton();
-        button.setText("\uD83D\uDC55Fudbolkalar");
-        button.setCallbackData("BaggyFudbolkaId");
-        row.add(button);
-        rowList.add(row);
-
-        row = new ArrayList<>();
-        button = new InlineKeyboardButton();
-        button.setText("\uD83E\uDD7CVeitrovka");
-        button.setCallbackData("BaggyVeitrovkaId");
-        row.add(button);
-        rowList.add(row);
-
-        inlineKeyboardMarkup.setKeyboard(rowList);
-        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
-        return sendMessage;
-    }
-
-
 
 
     //end uz
-
-
-
-
-
-
-
-
-
-
-
 
 
     // reply button uchun
