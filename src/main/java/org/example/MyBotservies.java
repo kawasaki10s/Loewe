@@ -20,83 +20,83 @@ public class MyBotservies {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture1.png\"")));
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/39"));
         sendPhoto.setCaption("Hoodie \n Rangi: Och kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture2 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture2.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: Toq Kok \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
-        return sendPhoto;
-    }
-    public SendPhoto UzHoodiePicture3 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture3.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
-        return sendPhoto;
-    }
-    public SendPhoto UzHoodiePicture4 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture4.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: Oq \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
-        return sendPhoto;
-    }
-    public SendPhoto UzHoodiePicture5 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture5.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: Qora  \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
-        return sendPhoto;
-    }
-    public SendPhoto UzHoodiePicture6 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture6.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: Oq va qora(oddiy bomaga) \n Razmeri: xs,s,m,l,xl \n Narxi: 359 900");
-        return sendPhoto;
-    }
-    public SendPhoto UzHoodiePicture7 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture7.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: Kok va oq\n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
-        return sendPhoto;
-    }
-    public SendPhoto UzHoodiePicture8 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture8.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: Qizil va oq\n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
-        return sendPhoto;
-    }
-    public SendPhoto UzHoodiePicture9 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture9.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: Malocni va toq kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
-        return sendPhoto;
-    }
-    public SendPhoto UzHoodiePicture10 (Long chatId){
-        SendPhoto sendPhoto = new SendPhoto();
-
-        sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture10.png\"")));
-        sendPhoto.setCaption("Hoodie \n Rangi: Och kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
-        return sendPhoto;
-    }
-
+//    public SendPhoto UzHoodiePicture2 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture2.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: Toq Kok \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+//        return sendPhoto;
+//    }
+//    public SendPhoto UzHoodiePicture3 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture3.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+//        return sendPhoto;
+//    }
+//    public SendPhoto UzHoodiePicture4 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture4.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: Oq \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+//        return sendPhoto;
+//    }
+//    public SendPhoto UzHoodiePicture5 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture5.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: Qora  \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+//        return sendPhoto;
+//    }
+//    public SendPhoto UzHoodiePicture6 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture6.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: Oq va qora(oddiy bomaga) \n Razmeri: xs,s,m,l,xl \n Narxi: 359 900");
+//        return sendPhoto;
+//    }
+//    public SendPhoto UzHoodiePicture7 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture7.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: Kok va oq\n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+//        return sendPhoto;
+//    }
+//    public SendPhoto UzHoodiePicture8 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture8.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: Qizil va oq\n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+//        return sendPhoto;
+//    }
+//    public SendPhoto UzHoodiePicture9 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture9.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: Malocni va toq kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+//        return sendPhoto;
+//    }
+//    public SendPhoto UzHoodiePicture10 (Long chatId){
+//        SendPhoto sendPhoto = new SendPhoto();
+//
+//        sendPhoto.setChatId(chatId);
+//        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture10.png\"")));
+//        sendPhoto.setCaption("Hoodie \n Rangi: Och kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+//        return sendPhoto;
+//    }
+//
 
     // text yozw uchun
 
