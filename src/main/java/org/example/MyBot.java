@@ -67,6 +67,22 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("uzBaggyHoodieId")){
+                try {
+                    execute(myBotservies.UzHoodiePicture1(chatId));
+                    execute(myBotservies.UzHoodiePicture2(chatId));
+                    execute(myBotservies.UzHoodiePicture3(chatId));
+                    execute(myBotservies.UzHoodiePicture4(chatId));
+                    execute(myBotservies.UzHoodiePicture5(chatId));
+                    execute(myBotservies.UzHoodiePicture6(chatId));
+                    execute(myBotservies.UzHoodiePicture7(chatId));
+                    execute(myBotservies.UzHoodiePicture8(chatId));
+                    execute(myBotservies.UzHoodiePicture9(chatId));
+                    execute(myBotservies.UzHoodiePicture10(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
             //
