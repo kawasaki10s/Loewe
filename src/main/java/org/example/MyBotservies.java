@@ -1,4 +1,4 @@
-package org.example;
+ package org.example;
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
@@ -140,7 +140,6 @@ public class MyBotservies {
         rowList.add(row2);
 
         //
-        //
         KeyboardRow row3 = new KeyboardRow();
         KeyboardButton button3 = new KeyboardButton();
         button3.setText("\uD83C\uDDFA\uD83C\uDDFF Tilni tanlash");
@@ -224,7 +223,7 @@ public class MyBotservies {
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅\uFE0F Ortga");
+        button.setText("⬅️\uFE0F Ortga");
         button.setCallbackData("uzKiyimlarOrtgaId");
         row.add(button);
         rowList.add(row);
@@ -273,7 +272,7 @@ public class MyBotservies {
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅\uFE0F Ortga");
+        button.setText("⬅️\uFE0F Ortga");
         button.setCallbackData("uzBaggyOrtgaId");
         row.add(button);
         rowList.add(row);
@@ -300,7 +299,7 @@ public class MyBotservies {
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅\uFE0F Ortga");
+        button.setText("⬅️\uFE0F Ortga");
         button.setCallbackData("ortgaHoodieId");
         row.add(button);
         rowList.add(row);
