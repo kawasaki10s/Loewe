@@ -12,6 +12,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.LongFunction;
 
 public class MyBotservies {
 
@@ -233,7 +234,7 @@ public class MyBotservies {
         return sendMessage;
     }
 
-    // Kiyimlar stylelari menyusi >> Baggy menu
+    // Kiyimlar stylelari menyusi >> Baggy menu2e
     public SendMessage uzBaggyMenu(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -282,7 +283,39 @@ public class MyBotservies {
         return sendMessage;
     }
 
+    // Hoodie Picture Purchase item Inline Button
+    public SendMessage uzPurchaseHoodie1 (Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
 
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("Sotib olish \uD83D\uDCB8");
+        button.setCallbackData("sotibOlishHoodieId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("ortgaHoodieId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
+    public SendMessage uzPurchase(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Pulingiz yetmayapti :3");
+        return sendMessage;
+    }
     //end uz
 
 
