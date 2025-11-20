@@ -1,16 +1,46 @@
 package org.example;
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
+import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.InlineKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMarkup;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotservies {
+
+    //Hodiie Rasmlar
+    public SendPhoto UzHoodiePicture1 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture1.png\"")));
+        sendPhoto.setCaption("Hoodie \n Rangi: Och kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+        return sendPhoto;
+    }
+    public SendPhoto UzHoodiePicture2 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture2.png\"")));
+        sendPhoto.setCaption("Hoodie \n Rangi: Toq Kok \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+        return sendPhoto;
+    }
+    public SendPhoto UzHoodiePicture3 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile(new File("\"C:\\Users\\ibroh\\OneDrive\\Рабочий стол\\loewe\\Hoodies\\Picture3.png\"")));
+        sendPhoto.setCaption("Hoodie \n Rangi: kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+        return sendPhoto;
+    }
+
 
     // text yozw uchun
 
