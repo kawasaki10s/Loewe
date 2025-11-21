@@ -1,4 +1,4 @@
- package org.example;
+package org.example;
 
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
@@ -9,15 +9,13 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKe
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.LongFunction;
 
 public class MyBotservies {
 
     //Hodiie Rasmlar
-    public SendPhoto UzHoodiePicture1 (Long chatId){
+    public SendPhoto UzHoodiePicture1(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -25,7 +23,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Och kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture2 (Long chatId){
+
+    public SendPhoto UzHoodiePicture2(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -33,7 +32,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Toq Kok \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture3 (Long chatId){
+
+    public SendPhoto UzHoodiePicture3(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -41,7 +41,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture4 (Long chatId){
+
+    public SendPhoto UzHoodiePicture4(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -49,7 +50,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Oq \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture5 (Long chatId){
+
+    public SendPhoto UzHoodiePicture5(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -57,7 +59,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Qora  \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture6 (Long chatId){
+
+    public SendPhoto UzHoodiePicture6(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -65,7 +68,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Oq va qora(oddiy bomaga) \n Razmeri: xs,s,m,l,xl \n Narxi: 359 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture7 (Long chatId){
+
+    public SendPhoto UzHoodiePicture7(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -73,7 +77,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Kok va oq\n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture8 (Long chatId){
+
+    public SendPhoto UzHoodiePicture8(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -81,7 +86,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Qizil va oq\n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture9 (Long chatId){
+
+    public SendPhoto UzHoodiePicture9(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -89,7 +95,8 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Malocni va toq kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture10 (Long chatId){
+
+    public SendPhoto UzHoodiePicture10(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
@@ -283,7 +290,7 @@ public class MyBotservies {
     }
 
     // Hoodie Picture Purchase item Inline Button
-    public SendMessage uzPurchaseHoodie1 (Long chatId){
+    public SendMessage uzPurchaseHoodie1(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -321,7 +328,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie2 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie2(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -359,7 +367,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie3 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie3(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -397,7 +406,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie4 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie4(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -435,7 +445,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie5 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie5(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -473,7 +484,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie6 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie6(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -511,7 +523,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie7 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie7(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -549,7 +562,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie8 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie8(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -587,7 +601,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie9 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie9(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -625,7 +640,8 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-    public SendMessage uzPurchaseHoodie10 (Long chatId){
+
+    public SendMessage uzPurchaseHoodie10(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("______________________________________________");
@@ -665,7 +681,7 @@ public class MyBotservies {
     }
 
 
-    public SendMessage uzPurchase(Long chatId){
+    public SendMessage uzPurchase(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Pulingiz yetmayapti :3");
