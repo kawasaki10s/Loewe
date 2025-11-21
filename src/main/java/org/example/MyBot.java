@@ -10,7 +10,8 @@ public class MyBot extends TelegramLongPollingBot {
 
 
     @Override
-    public void onUpdateReceived(Update update) {
+    public void
+    onUpdateReceived(Update update) {
 
 
         if (update.hasMessage() && update.getMessage().hasText()) {
@@ -18,10 +19,8 @@ public class MyBot extends TelegramLongPollingBot {
             String text = update.getMessage().getText();
 
 
-
-
             // Text korishida javob kelsa
-            if(text.equals("/start")){
+            if (text.equals("/start")) {
                 try {
                     execute(myBotservies.uzLangMenu(chatId));
                 } catch (TelegramApiException e) {
@@ -29,7 +28,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-            if (text.equals("\uD83D\uDC54 Kiyimlar")){
+            if (text.equals("\uD83D\uDC54 Kiyimlar")) {
                 try {
                     execute(myBotservies.uzKiyimlarMenu(chatId));
                 } catch (TelegramApiException e) {
@@ -38,7 +37,7 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
 
-        }else if (update.hasCallbackQuery()) {
+        } else if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
             String data = callbackQuery.getData();
             Long chatId = callbackQuery.getMessage().getChatId();
@@ -46,13 +45,10 @@ public class MyBot extends TelegramLongPollingBot {
             //data kornshida javob kelsa
 
 
-
-
-
             //uzbeca
 
             // O'zbekcha menyu
-            if (data.equals("O'zbekchaId")){
+            if (data.equals("O'zbekchaId")) {
                 try {
                     execute(myBotservies.uzMain(chatId));
                     execute(myBotservies.uzMainMenu(chatId));
@@ -67,30 +63,160 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-            if (data.equals("uzBaggyHoodieId")){
+            if (data.equals("uzBaggyHoodieId")) {
                 try {
                     execute(myBotservies.UzHoodiePicture1(chatId));
+                    execute(myBotservies.uzPurchaseHoodie1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture2(chatId));
+                    execute(myBotservies.uzPurchaseHoodie2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture3(chatId));
+                    execute(myBotservies.uzPurchaseHoodie3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture4(chatId));
+                    execute(myBotservies.uzPurchaseHoodie4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture5(chatId));
+                    execute(myBotservies.uzPurchaseHoodie5(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture6(chatId));
+                    execute(myBotservies.uzPurchaseHoodie6(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture7(chatId));
+                    execute(myBotservies.uzPurchaseHoodie7(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture8(chatId));
+                    execute(myBotservies.uzPurchaseHoodie8(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture9(chatId));
+                    execute(myBotservies.uzPurchaseHoodie9(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzBaggyHoodieId")) {
+                try {
                     execute(myBotservies.UzHoodiePicture10(chatId));
+                    execute(myBotservies.uzPurchaseHoodie10(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
             }
 
+            if (data.equals("uzHoodiePic1OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic2OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic3OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic4OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie5(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic5OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie6(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic6OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie7(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic7OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie8(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic8OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie9(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic9OldingaId")){
+                try {
+                    execute(myBotservies.uzPurchaseHoodie10(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
-
+            if (data.equals("uzHoodiePicSotibOlishId")){
+                try {
+                    execute(myBotservies.uzPurchase(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
             //ruschaa
-
-
-
 
 
             //inglisch

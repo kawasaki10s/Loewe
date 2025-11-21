@@ -286,21 +286,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie1 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic1OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic1OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -311,21 +324,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie2 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic2OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic2OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -336,21 +362,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie3 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic3OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic3OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -361,21 +400,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie4 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic4OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePicOldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePic4SotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -386,21 +438,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie5 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic5OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic5OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -411,21 +476,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie6 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic6OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic6OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -436,21 +514,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie7 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic7OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic7OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -461,21 +552,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie8 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic8OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic8OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -486,21 +590,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie9 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic9OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic9OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -511,21 +628,34 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie10 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
+        sendMessage.setText("______________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
 
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzHoodiePic10OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzHoodiePic10OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
         button.setText("Sotib olish \uD83D\uDCB8");
-        button.setCallbackData("sotibOlishHoodieId");
+        button.setCallbackData("uzHoodiePicSotibOlishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("ortgaHoodieId");
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHoodieOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -533,6 +663,7 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
+
 
     public SendMessage uzPurchase(Long chatId){
         SendMessage sendMessage = new SendMessage();
