@@ -72,6 +72,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            // rasmni oldinga o'tkaziw
             if (data.equals("uzHoodiePic1OldingaId")) {
                 try {
                     execute(myBotservies.UzHoodiePicture2(chatId));
@@ -145,6 +146,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            // rasmni orqaga o'tkaziw
             if (data.equals("uzHoodiePic2OrtgaId")) {
                 try {
                     execute(myBotservies.UzHoodiePicture1(chatId));
