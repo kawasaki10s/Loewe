@@ -72,7 +72,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-            // rasmni oldinga o'tkaziw
+            // Hoodie rasmni oldinga o'tkaziw
             if (data.equals("uzHoodiePic1OldingaId")) {
                 try {
                     execute(myBotservies.UzHoodiePicture2(chatId));
@@ -146,7 +146,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-            // rasmni orqaga o'tkaziw
+            // Hoodie rasmni orqaga o'tkaziw
             if (data.equals("uzHoodiePic2OrtgaId")) {
                 try {
                     execute(myBotservies.UzHoodiePicture1(chatId));
@@ -221,6 +221,91 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
             if (data.equals("uzHoodiePicSotibOlishId")) {
+                try {
+                    execute(myBotservies.uzPurchase(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            // Switch Shim menu
+            if (data.equals("uzBaggyShimlarId")){
+                try {
+                    execute(myBotservies.UzShimPicture1(chatId));
+                    execute(myBotservies.uzPurchaseShim1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            // Shim rasmni oldinga o'tkaziw
+            if (data.equals("uzShimPic1OldingaId")) {
+                try {
+                    execute(myBotservies.UzShimPicture2(chatId));
+                    execute(myBotservies.uzPurchaseShim2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzShimPic2OldingaId")) {
+                try {
+                    execute(myBotservies.UzShimPicture3(chatId));
+                    execute(myBotservies.uzPurchaseShim3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzShimPic3OldingaId")) {
+                try {
+                    execute(myBotservies.UzShimPicture4(chatId));
+                    execute(myBotservies.uzPurchaseShim4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzShimPic4OldingaId")) {
+                try {
+                    execute(myBotservies.UzShimPicture5(chatId));
+                    execute(myBotservies.uzPurchaseShim5(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            // Shim rasmni orqaga o'tkaziw
+            if (data.equals("uzShimPic2OrtgaId")) {
+                try {
+                    execute(myBotservies.UzShimPicture1(chatId));
+                    execute(myBotservies.uzPurchaseShim1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzShimPic3OrtgaId")) {
+                try {
+                    execute(myBotservies.UzShimPicture2(chatId));
+                    execute(myBotservies.uzPurchaseShim2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzShimPic4OrtgaId")) {
+                try {
+                    execute(myBotservies.UzShimPicture3(chatId));
+                    execute(myBotservies.uzPurchaseShim3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzShimPic5OrtgaId")) {
+                try {
+                    execute(myBotservies.UzShimPicture4(chatId));
+                    execute(myBotservies.uzPurchaseShim4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzShimPicSotibOlishId")) {
                 try {
                     execute(myBotservies.uzPurchase(chatId));
                 } catch (TelegramApiException e) {
