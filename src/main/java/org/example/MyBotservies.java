@@ -232,6 +232,116 @@ public class MyBotservies {
         return sendPhoto;
     }
 
+    //aksesuarlar
+    public SendPhoto UzAksesuarlarPicture1 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/78"));
+        sendPhoto.setCaption("sumka \n Rangi: qora \n Razmeri:yoq \n Narxi: 30$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture2 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/79"));
+        sendPhoto.setCaption("sumka \n Rangi: yashil \n Razmeri:yoq \n Narxi: 50$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture3 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/80"));
+        sendPhoto.setCaption("ochki \n Rangi: qora \n Razmeri:yoq \n Narxi: 30$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture4 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/81"));
+        sendPhoto.setCaption("ochki \n Rangi: oq \n Razmeri:yoq \n Narxi: 30$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture5 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/82"));
+        sendPhoto.setCaption("ochki \n Rangi: qora \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture6 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/83"));
+        sendPhoto.setCaption("kepka \n Rangi: idk \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture7 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/84"));
+        sendPhoto.setCaption("kepka \n Rangi: oq \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture13 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/91"));
+        sendPhoto.setCaption("nike \n Rangi: oq \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture8 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/92"));
+        sendPhoto.setCaption("shapka \n Rangi: oq \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture9 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/93"));
+        sendPhoto.setCaption("qolqop \n Rangi: oq \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture10 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/94"));
+        sendPhoto.setCaption("achki \n Rangi: oq \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture11 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/95"));
+        sendPhoto.setCaption("shapka \n Rangi: qora \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+    public SendPhoto UzAksesuarlarPicture12 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/96"));
+        sendPhoto.setCaption("kepka \n Rangi: idk \n Razmeri:yoq \n Narxi: 40$");
+        return sendPhoto;
+    }
+
+
+
+
+
 
 
 
