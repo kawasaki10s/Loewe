@@ -174,6 +174,18 @@ public class MyBotservies {
         return sendPhoto;
     }
 
+    // Veitrovkalar
+    public SendPhoto UzVeitrovkaPicture4 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/63"));
+        sendPhoto.setCaption("Sveiter \n Rangi: Seriy \n Razmeri: xs,s,m,l,xl \n Narxi: 50$");
+        return sendPhoto;
+    }
+
+
+
 
 
 
