@@ -15,13 +15,13 @@ import java.util.List;
 
 public class MyBotservies {
 
-    //Hodiie Rasmlar 1-10
+    //Baggy hodiie Rasmlar 1-10
     public SendPhoto UzHoodiePicture1(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/39"));
-        sendPhoto.setCaption("Hoodie \n Rangi: Och kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+        sendPhoto.setCaption("Hoodie \n Rangi: oq \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
     public SendPhoto UzHoodiePicture2(Long chatId) {
@@ -29,7 +29,7 @@ public class MyBotservies {
 
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/8"));
-        sendPhoto.setCaption("Hoodie \n Rangi: Toq Kok \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+        sendPhoto.setCaption("Hoodie \n Rangi: oq \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
     public SendPhoto UzHoodiePicture3(Long chatId) {
@@ -37,7 +37,7 @@ public class MyBotservies {
 
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/9"));
-        sendPhoto.setCaption("Hoodie \n Rangi: kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+        sendPhoto.setCaption("Hoodie \n Rangi: to'q ko'k \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
     public SendPhoto UzHoodiePicture4(Long chatId) {
@@ -45,7 +45,7 @@ public class MyBotservies {
 
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/10"));
-        sendPhoto.setCaption("Hoodie \n Rangi: Oq \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
+        sendPhoto.setCaption("Hoodie \n Rangi: och kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
     public SendPhoto UzHoodiePicture5(Long chatId) {
@@ -285,7 +285,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie1(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -323,7 +323,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie2(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -361,7 +361,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie3(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -399,7 +399,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie4(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -413,7 +413,7 @@ public class MyBotservies {
 
         button = new InlineKeyboardButton();
         button.setText("Oldinga ⏩");
-        button.setCallbackData("uzHoodiePicOldingaId");
+        button.setCallbackData("uzHoodiePic4OldingaId");
         row.add(button);
 
         row = new ArrayList<>();
@@ -437,7 +437,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie5(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -475,7 +475,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie6(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -513,7 +513,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie7(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -551,7 +551,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie8(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -589,7 +589,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie9(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -627,7 +627,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie10(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();

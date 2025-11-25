@@ -228,7 +228,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-            //ruschaa
+            //ruscha
 
 
             //inglisch
