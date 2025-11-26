@@ -332,6 +332,64 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
             // Veitrovka rasmni oldinga o'tkaziw
+            if (data.equals("uzVeitrovkaPic1OrtgaId")) {
+                try {
+                    execute(myBotservies.uzPurchaseVeitrovka2(chatId));
+                    execute(myBotservies.uzPurchaseVeitrovka3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzVeitrovkaPic2OldingaId")) {
+                try {
+                    execute(myBotservies.UzVeitrovkaPicture3(chatId));
+                    execute(myBotservies.uzPurchaseVeitrovka3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic3OldingaId")) {
+                try {
+                    execute(myBotservies.UzHoodiePicture4(chatId));
+                    execute(myBotservies.uzPurchaseHoodie4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic4OldingaId")) {
+                try {
+                    execute(myBotservies.UzHoodiePicture5(chatId));
+                    execute(myBotservies.uzPurchaseHoodie5(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic5OldingaId")) {
+                try {
+                    execute(myBotservies.UzHoodiePicture6(chatId));
+                    execute(myBotservies.uzPurchaseHoodie6(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic6OldingaId")) {
+                try {
+                    execute(myBotservies.UzHoodiePicture7(chatId));
+                    execute(myBotservies.uzPurchaseHoodie7(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzHoodiePic7OldingaId")) {
+                try {
+                    execute(myBotservies.UzHoodiePicture8(chatId));
+                    execute(myBotservies.uzPurchaseHoodie8(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            // Veitrovka rasmni orqaga o'tkaziw
             if (data.equals("uzHoodiePic1OldingaId")) {
                 try {
                     execute(myBotservies.UzHoodiePicture2(chatId));
@@ -388,8 +446,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
-            // Veitrovka rasmni orqaga o'tkaziw
 
 
 

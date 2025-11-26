@@ -592,7 +592,6 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
-
     // Baggy >> Hoodie Picture Purchase item Inline Button
     public SendMessage uzPurchaseHoodie1 (Long chatId){
         SendMessage sendMessage = new SendMessage();
