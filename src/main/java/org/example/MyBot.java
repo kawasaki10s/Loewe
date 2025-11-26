@@ -89,6 +89,20 @@ public class MyBot extends TelegramLongPollingBot {
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }
             if (data.equals("uzHoodiePic2OldingaId")) {
                 try {

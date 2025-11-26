@@ -57,7 +57,7 @@ public class MyBotservies {
         sendPhoto.setCaption("Hoodie \n Rangi: Qora  \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
     }
-    public SendPhoto UzHoodiePicture6 (Long chatId){
+    public SendPhoto UzHoodiePicture6 (Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
