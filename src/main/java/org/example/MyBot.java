@@ -36,6 +36,14 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            if (text.equals("\uD83C\uDDFA\uD83C\uDDFF Tilni o'zgartirish")){
+                try {
+                    execute(myBotservies.uzLangMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
 
         } else if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
@@ -308,6 +316,55 @@ public class MyBot extends TelegramLongPollingBot {
             if (data.equals("uzShimPicSotibOlishId")) {
                 try {
                     execute(myBotservies.uzPurchase(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+
+            if (data.equals("uzClassicId")){
+                try {
+                    execute(myBotservies.uzClassicMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzKiyimlarOrtgaId")){
+                try {
+                    execute(myBotservies.uzMainMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzBaggyOrtgaId")){
+                try {
+                    execute(myBotservies.uzKiyimlarMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzHoodieOrtgaId")){
+                try {
+                    execute(myBotservies.uzBaggyMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzShimOrtgaId")){
+                try {
+                    execute(myBotservies.uzBaggyMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzClassicOrtgaId")){
+                try {
+                    execute(myBotservies.uzKiyimlarMenu(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

@@ -98,6 +98,7 @@ public class MyBotservies {
         return sendPhoto;
     }
 
+    //
     //Shim rasmlar
     public SendPhoto UzShimPicture1 (Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
@@ -351,7 +352,7 @@ public class MyBotservies {
 
     // text yozw uchun
 
-    // O'zbekcha menyu
+    // O'zbekcha menyu 1
     public SendMessage uzMain(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -359,7 +360,7 @@ public class MyBotservies {
         return sendMessage;
     }
 
-    // O'zbekcha menyu
+    // O'zbekcha menyu 2
     public SendMessage uzMainMenu(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -368,31 +369,31 @@ public class MyBotservies {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         List<KeyboardRow> rowList = new ArrayList<>();
 
-        //👔 Kiyimlar
+        // clothes
         KeyboardRow row = new KeyboardRow();
         KeyboardButton button = new KeyboardButton();
         button.setText("\uD83D\uDC54 Kiyimlar");
         row.add(button);
         rowList.add(row);
 
-        //
+        // Communicate us
         KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
         button1.setText("\uD83D\uDCC8 Hamkorlik");
         row1.add(button1);
         rowList.add(row1);
 
-        //
+        // tips
         KeyboardRow row2 = new KeyboardRow();
         KeyboardButton button2 = new KeyboardButton();
         button2.setText("\uD83D\uDCAC Izoh Qoldirish");
         row2.add(button2);
         rowList.add(row2);
 
-        //
+        // change language
         KeyboardRow row3 = new KeyboardRow();
         KeyboardButton button3 = new KeyboardButton();
-        button3.setText("\uD83C\uDDFA\uD83C\uDDFF Tilni tanlash");
+        button3.setText("\uD83C\uDDFA\uD83C\uDDFF Tilni o'zgartirish");
         row3.add(button3);
         rowList.add(row3);
 
@@ -441,7 +442,7 @@ public class MyBotservies {
         return sendMessage;
     }
 
-    // Kiyimlar stylelari menyusi
+    // Kiyimlar
     public SendMessage uzKiyimlarMenu(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
@@ -532,60 +533,11 @@ public class MyBotservies {
         return sendMessage;
     }
 
-    // Classic main menu
-    public SendMessage uzClassicMenu(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Kiyimlar Bolimi Styleni Tanlang");
-
-        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
-        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
-
-        List<InlineKeyboardButton> row = new ArrayList<>();
-        InlineKeyboardButton button = new InlineKeyboardButton();
-        button.setText("\uD83D\uDC58 Sweaterlar");
-        button.setCallbackData("uzClassicSweaterId");
-        row.add(button);
-        rowList.add(row);
-
-        row = new ArrayList<>();
-        button = new InlineKeyboardButton();
-        button.setText("\uD83D\uDC56 Shimlar");
-        button.setCallbackData("uzClassicShimlarId");
-        row.add(button);
-        rowList.add(row);
-
-        row = new ArrayList<>();
-        button = new InlineKeyboardButton();
-        button.setText("\uD83D\uDC55 Fudbolkalar");
-        button.setCallbackData("uzBaggyFutbolkalarId");
-        row.add(button);
-        rowList.add(row);
-
-        row = new ArrayList<>();
-        button = new InlineKeyboardButton();
-        button.setText("\uD83E\uDD7C Veitrovkalar");
-        button.setCallbackData("uzBaggyVitrovkalar");
-        row.add(button);
-        rowList.add(row);
-
-        row = new ArrayList<>();
-        button = new InlineKeyboardButton();
-        button.setText("⬅️\uFE0F Ortga");
-        button.setCallbackData("uzBaggyOrtgaId");
-        row.add(button);
-        rowList.add(row);
-
-        inlineKeyboardMarkup.setKeyboard(rowList);
-        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
-        return sendMessage;
-    }
-
     // Hoodie Picture Purchase item Inline Button
     public SendMessage uzPurchaseHoodie1 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -623,7 +575,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie2 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -661,7 +613,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie3 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -699,7 +651,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie4 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -737,7 +689,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie5 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -775,7 +727,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie6 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -813,7 +765,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie7 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -851,7 +803,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie8 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -890,7 +842,7 @@ public class MyBotservies {
 
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -928,7 +880,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseHoodie10 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -968,7 +920,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseShim1 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -1006,7 +958,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseShim2 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -1044,7 +996,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseShim3 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -1082,7 +1034,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseShim4 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -1120,7 +1072,7 @@ public class MyBotservies {
     public SendMessage uzPurchaseShim5 (Long chatId){
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("______________________________________________");
+        sendMessage.setText("_____________________________________________");
 
         InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
         List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
@@ -1157,6 +1109,55 @@ public class MyBotservies {
     }
 
     // Bag'g'iy
+
+    // Classic main menu
+    public SendMessage uzClassicMenu(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Kiyimlar Bolimi Styleni Tanlang");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDC58 Sweaterlar");
+        button.setCallbackData("uzClassicSweaterId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDC56 Shimlar");
+        button.setCallbackData("uzClassicShimlarId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDC55 Fudbolkalar");
+        button.setCallbackData("uzClassicFutbolkalarId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83E\uDD7C Veitrovkalar");
+        button.setCallbackData("uzClassicVitrovkalar");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("⬅️\uFE0F Ortga");
+        button.setCallbackData("uzClassicOrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
 
 
     public SendMessage uzPurchase(Long chatId){
