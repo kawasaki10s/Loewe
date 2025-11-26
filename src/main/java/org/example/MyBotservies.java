@@ -32,29 +32,6 @@ public class MyBotservies {
         sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/9"));
         sendPhoto.setCaption("Hoodie \n Rangi: Toq Kok \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
         return sendPhoto;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
     public SendPhoto UzHoodiePicture3 (Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
