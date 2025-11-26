@@ -339,6 +339,67 @@ public class MyBotservies {
         return sendPhoto;
     }
 
+    //fudbolka
+    public SendPhoto UzFudbolkaPicture1 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/42"));
+        sendPhoto.setCaption("FUdbolka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+    public SendPhoto UzfudbolkaPicture2 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/43"));
+        sendPhoto.setCaption("Fudbolka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+    public SendPhoto UzfudbolkaPicture3 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/44"));
+        sendPhoto.setCaption("fudbolka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+    public SendPhoto UzfudbolkaPicture4 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/45"));
+        sendPhoto.setCaption("fudbolka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+    public SendPhoto UzfudbolkaPicture5 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/46"));
+        sendPhoto.setCaption("fudbolka \n Rangi: oq \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+    public SendPhoto UzfudbolkaPicture6 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/124"));
+        sendPhoto.setCaption("fudbolka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+    public SendPhoto UzfudbolkaPicture7 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/125"));
+        sendPhoto.setCaption("fudbolka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+
+
+
+
 
 
 
