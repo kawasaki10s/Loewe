@@ -429,8 +429,6 @@ public class MyBotservies {
         sendPhoto.setCaption("fudbolka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
         return sendPhoto;
     }
-
-
     public SendPhoto UzfudbolkaPicture7 (Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
 

@@ -347,6 +347,114 @@ public class MyBot extends TelegramLongPollingBot {
             if (data.equals("uzBaggyFutbolkalarId")){
                 try {
                     execute(myBotservies.UzfudbolkaPicture1(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            // Fudbolka rasmni oldinga o'tkaziw
+            if (data.equals("uzFudbolkaPic1OldingaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture2(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic2OldingaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture3(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic3OldingaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture4(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic4OldingaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture5(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka5(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic5OldingaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture6(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka6(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic6OldingaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture7(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka7(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            // Fudbolka rasmni orqaga o'tkaziw
+            if (data.equals("uzFudbolkaPic2OrtgaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture1(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic3OrtgaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture2(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic4OrtgaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture3(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic5OrtgaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture4(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic6OrtgaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture5(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka5(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzFudbolkaPic7OrtgaId")) {
+                try {
+                    execute(myBotservies.UzfudbolkaPicture6(chatId));
+                    execute(myBotservies.uzPurchaseFudbolka6(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzFudbolkaPicSotibOlishId")){
+                try {
+                    execute(myBotservies.uzPurchase(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -410,7 +518,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
 
             // Veitrovka rasmni orqaga o'tkaziw
             if (data.equals("uzVeitrovkaPic2OrtgaId")) {
@@ -504,6 +611,14 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
             if (data.equals("uzShimOrtgaId")) {
+                try {
+                    execute(myBotservies.uzBaggyMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzFudbolkaOrtgaId")){
                 try {
                     execute(myBotservies.uzBaggyMenu(chatId));
                 } catch (TelegramApiException e) {
