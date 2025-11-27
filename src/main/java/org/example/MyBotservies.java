@@ -19,7 +19,6 @@ public class MyBotservies {
     //Hodiie Rasmlar
     public SendPhoto UzHoodiePicture1 (Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
-
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/8"));
         sendPhoto.setCaption("Hoodie \n Rangi: Och kulrang \n Razmeri: xs,s,m,l,xl \n Narxi: 259 900");
@@ -139,6 +138,32 @@ public class MyBotservies {
         sendPhoto.setCaption("Shim \n Rangi: Oq \n Razmeri: xs,s,m,l,xl \n Narxi: 559 900");
         return sendPhoto;
     }
+    public SendPhoto UzShimPicture6 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/127"));
+        sendPhoto.setCaption("Shim \n Rangi: Oq \n Razmeri: xs,s,m,l,xl \n Narxi: 559 900");
+        return sendPhoto;
+    }
+    public SendPhoto UzShimPicture7 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/128"));
+        sendPhoto.setCaption("Shim \n Rangi: Oq \n Razmeri: xs,s,m,l,xl \n Narxi: 559 900");
+        return sendPhoto;
+    }
+    public SendPhoto UzShimPicture8 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/129"));
+        sendPhoto.setCaption("Shim \n Rangi: Oq \n Razmeri: xs,s,m,l,xl \n Narxi: 559 900");
+        return sendPhoto;
+    }
+
+
 
     //Sviter rasmlar
     public SendPhoto UzSveiterPicture1 (Long chatId){
@@ -228,6 +253,22 @@ public class MyBotservies {
 
         sendPhoto.setChatId(chatId);
         sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/75"));
+        sendPhoto.setCaption("Kurtka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+    public SendPhoto UzVeitrovkaPicture8 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/130"));
+        sendPhoto.setCaption("Kurtka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
+        return sendPhoto;
+    }
+    public SendPhoto UzVeitrovkaPicture9 (Long chatId){
+        SendPhoto sendPhoto = new SendPhoto();
+
+        sendPhoto.setChatId(chatId);
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/131"));
         sendPhoto.setCaption("Kurtka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
         return sendPhoto;
     }
