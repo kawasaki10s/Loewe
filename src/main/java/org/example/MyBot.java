@@ -74,8 +74,6 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
 
-
-
             // Switch Hoodie
             if (data.equals("uzBaggyHoodieId")) {
                 try {
@@ -244,8 +242,6 @@ public class MyBot extends TelegramLongPollingBot {
             }
 
 
-
-
             // Switch Shim
             if (data.equals("uzBaggyShimlarId")) {
                 try {
@@ -331,8 +327,14 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-
-
+            // Switch Fudbolka
+            if (data.equals("uzBaggyFutbolkalarId")){
+                try {
+                    execute(myBotservies.UzfudbolkaPicture1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
             // Switch Veitrovka
             if (data.equals("uzBaggyVitrovkalarId")) {
