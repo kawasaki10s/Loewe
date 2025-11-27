@@ -347,7 +347,7 @@ public class MyBot extends TelegramLongPollingBot {
             if (data.equals("uzVeitrovkaPic1OldingaId")) {
                 try {
                     execute(myBotservies.UzVeitrovkaPicture2(chatId));
-                    execute(myBotservies.uzPurchaseVeitrovka3(chatId));
+                    execute(myBotservies.uzPurchaseVeitrovka2(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

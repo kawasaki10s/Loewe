@@ -219,7 +219,7 @@ public class MyBotservies {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/77"));
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/74"));
         sendPhoto.setCaption("Kurtka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 85$");
         return sendPhoto;
     }
@@ -227,7 +227,7 @@ public class MyBotservies {
         SendPhoto sendPhoto = new SendPhoto();
 
         sendPhoto.setChatId(chatId);
-        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/78"));
+        sendPhoto.setPhoto(new InputFile("https://t.me/Looewe3/75"));
         sendPhoto.setCaption("Kurtka \n Rangi: qora \n Razmeri: xs,s,m,l,xl \n Narxi: 80$");
         return sendPhoto;
     }
@@ -338,7 +338,7 @@ public class MyBotservies {
         return sendPhoto;
     }
 
-    //fudbolka
+    //Baggy fudbolka
     public SendPhoto UzFudbolkaPicture1 (Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
 
