@@ -165,6 +165,7 @@ public class MyBotservies {
 
 
 
+
     //Sviter rasmlar
     public SendPhoto UzSveiterPicture1 (Long chatId){
         SendPhoto sendPhoto = new SendPhoto();
