@@ -462,48 +462,14 @@ public class MyBotservies {
         return sendMessage;
     }
 
-    // O'zbekcha menyu 2
-    public SendMessage uzMainMenu(Long chatId) {
-        SendMessage sendMessage = new SendMessage();
-        sendMessage.setChatId(chatId);
-        sendMessage.setText("Menyuni tanlang:");
 
-        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
-        List<KeyboardRow> rowList = new ArrayList<>();
 
-        // clothes
-        KeyboardRow row = new KeyboardRow();
-        KeyboardButton button = new KeyboardButton();
-        button.setText("\uD83D\uDC54 Kiyimlar");
-        row.add(button);
-        rowList.add(row);
 
-        // Communicate us
-        KeyboardRow row1 = new KeyboardRow();
-        KeyboardButton button1 = new KeyboardButton();
-        button1.setText("\uD83D\uDCC8 Hamkorlik");
-        row1.add(button1);
-        rowList.add(row1);
 
-        // tips
-        KeyboardRow row2 = new KeyboardRow();
-        KeyboardButton button2 = new KeyboardButton();
-        button2.setText("\uD83D\uDCAC Izoh Qoldirish");
-        row2.add(button2);
-        rowList.add(row2);
 
-        // change language
-        KeyboardRow row3 = new KeyboardRow();
-        KeyboardButton button3 = new KeyboardButton();
-        button3.setText("\uD83C\uDDFA\uD83C\uDDFF Tilni o'zgartirish");
-        row3.add(button3);
-        rowList.add(row3);
 
-        replyKeyboardMarkup.setResizeKeyboard(true);
-        replyKeyboardMarkup.setKeyboard(rowList);
-        sendMessage.setReplyMarkup(replyKeyboardMarkup);
-        return sendMessage;
-    }
+
+
 
 
     //inline buttonlar uchun
@@ -1540,6 +1506,117 @@ public class MyBotservies {
     //end uz
 
 
+    // hamkorlik menu
+    public SendMessage uzLangHamkorlik(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Biz bilan hamkorlik uchun!!!");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDCDE Biz bilan bog'lanish");
+        button.setCallbackData("UzBoglanishId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("☎\uFE0F Bizning kontaktlarimiz");
+        button.setCallbackData("UzOurContactsId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDCCD Bizning manzillarimiz");
+        button.setCallbackData("UzLocationId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+
+
+
+
+
+
+
     // reply button uchun
+
+    //oz main
+    public SendMessage uzMainMenu(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Menyuni tanlang:");
+
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        List<KeyboardRow> rowList = new ArrayList<>();
+
+        // clothes
+        KeyboardRow row = new KeyboardRow();
+        KeyboardButton button = new KeyboardButton();
+        button.setText("\uD83D\uDC54 Kiyimlar");
+        row.add(button);
+        rowList.add(row);
+
+        // Communicate us
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("\uD83D\uDCC8 Hamkorlik");
+        row1.add(button1);
+        rowList.add(row1);
+
+        // tips
+        KeyboardRow row2 = new KeyboardRow();
+        KeyboardButton button2 = new KeyboardButton();
+        button2.setText("\uD83D\uDCAC Izoh Qoldirish");
+        row2.add(button2);
+        rowList.add(row2);
+
+        // change language
+        KeyboardRow row3 = new KeyboardRow();
+        KeyboardButton button3 = new KeyboardButton();
+        button3.setText("\uD83C\uDDFA\uD83C\uDDFF Tilni o'zgartirish");
+        row3.add(button3);
+        rowList.add(row3);
+
+        replyKeyboardMarkup.setResizeKeyboard(true);
+        replyKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+        return sendMessage;
+    }
+
+    //izoh qoldirish
+    public SendMessage uzIzohQoldirish(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Biz siz bilan bog‘lanishimiz uchun telefon raqamingizni yuboring:");
+
+        // Keyboard
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        replyKeyboardMarkup.setResizeKeyboard(true);
+
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        button.setText("📱 Telefon raqamni yuborish");
+        button.setRequestContact(true);
+
+        row.add(button);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+
 
 }

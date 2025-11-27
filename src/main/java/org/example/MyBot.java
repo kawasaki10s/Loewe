@@ -44,6 +44,22 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            if (text.equals("\uD83D\uDCAC Izoh Qoldirish")){
+                try {
+                    execute(myBotservies.uzIzohQoldirish(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (text.equals("\uD83D\uDCC8 Hamkorlik")){
+                try {
+                    execute(myBotservies.uzLangHamkorlik(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
 
         } else if (update.hasCallbackQuery()) {
             CallbackQuery callbackQuery = update.getCallbackQuery();
