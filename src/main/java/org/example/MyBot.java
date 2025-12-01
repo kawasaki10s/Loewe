@@ -518,6 +518,22 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+            if (data.equals("uzVeitrovkaPic7OldingaId")) {
+                try {
+                    execute(myBotservies.UzVeitrovkaPicture8(chatId));
+                    execute(myBotservies.uzPurchaseVeitrovka8(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzVeitrovkaPic8OldingaId")) {
+                try {
+                    execute(myBotservies.UzVeitrovkaPicture9(chatId));
+                    execute(myBotservies.uzPurchaseVeitrovka9(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
             // Veitrovka rasmni orqaga o'tkaziw
             if (data.equals("uzVeitrovkaPic2OrtgaId")) {
@@ -564,6 +580,22 @@ public class MyBot extends TelegramLongPollingBot {
                 try {
                     execute(myBotservies.UzVeitrovkaPicture6(chatId));
                     execute(myBotservies.uzPurchaseVeitrovka6(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzVeitrovkaPic8OrtgaId")) {
+                try {
+                    execute(myBotservies.UzVeitrovkaPicture7(chatId));
+                    execute(myBotservies.uzPurchaseVeitrovka7(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzVeitrovkaPic9OrtgaId")) {
+                try {
+                    execute(myBotservies.UzVeitrovkaPicture8(chatId));
+                    execute(myBotservies.uzPurchaseVeitrovka8(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }

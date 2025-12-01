@@ -535,8 +535,8 @@ public class MyBotservies {
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
-        button.setText("\uD83E\uDE73 New Money");
-        button.setCallbackData("uzNewMoneyId");
+        button.setText("\uD83D\uDC53 Aksessuarlar \uD83E\uDDE3");
+        button.setCallbackData("uzAksessuarlarId");
         row.add(button);
         rowList.add(row);
 
@@ -1710,8 +1710,82 @@ public class MyBotservies {
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
     }
+    public SendMessage uzPurchaseVeitrovka8 (Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("_____________________________________________");
 
-    // Bag'g'iy
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzVeitrovkaPic8OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzVeitrovkaPic8OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("Sotib olish \uD83D\uDCB8");
+        button.setCallbackData("uzVeitrovkaPicSotibOlishId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzVeitrovkaOrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
+    public SendMessage uzPurchaseVeitrovka9 (Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("_____________________________________________");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("⏪ Ortga");
+        button.setCallbackData("uzVeitrovkaPic9OrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        button = new InlineKeyboardButton();
+        button.setText("Oldinga ⏩");
+        button.setCallbackData("uzVeitrovkaPic9OldingaId");
+        row.add(button);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("Sotib olish \uD83D\uDCB8");
+        button.setCallbackData("uzVeitrovkaPicSotibOlishId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzVeitrovkaOrtgaId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
+        return sendMessage;
+    }
 
     // Classic main menu
     public SendMessage uzClassicMenu(Long chatId) {
