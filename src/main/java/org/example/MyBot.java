@@ -618,6 +618,74 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            if (data.equals("uzClassicOrtgaId")){
+                try {
+                    execute(myBotservies.uzKiyimlarMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (data.equals("uzClassicSweaterId")){
+                try {
+                    execute(myBotservies.UzSveiterPicture1(chatId));
+                    execute(myBotservies.uzClassicSweaterPurchase1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            // Classic Sweaters pic olding'a o'tqzig'sh
+            if (data.equals("uzSweaterPic1OldingaId")){
+                try {
+                    execute(myBotservies.UzSveiterPicture2(chatId));
+                    execute(myBotservies.uzClassicSweaterPurchase2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzSweaterPic2OldingaId")){
+                try {
+                    execute(myBotservies.UzSveiterPicture3(chatId));
+                    execute(myBotservies.uzClassicSweaterPurchase3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzSweaterPic3OldingaId")){
+                try {
+                    execute(myBotservies.UzSveiterPicture4(chatId));
+                    execute(myBotservies.uzClassicSweaterPurchase4(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            // Classic Sweaters pic arqag'a o'tqzig'sh
+            if (data.equals("uzSweaterPic2OrtgaId")){
+                try {
+                    execute(myBotservies.UzSveiterPicture1(chatId));
+                    execute(myBotservies.uzClassicSweaterPurchase1(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzSweaterPic3OrtgaId")){
+                try {
+                    execute(myBotservies.UzSveiterPicture2(chatId));
+                    execute(myBotservies.uzClassicSweaterPurchase2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (data.equals("uzSweaterPic4OrtgaId")){
+                try {
+                    execute(myBotservies.UzSveiterPicture3(chatId));
+                    execute(myBotservies.uzClassicSweaterPurchase3(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
             if (data.equals("uzKiyimlarOrtgaId")) {
                 try {
                     execute(myBotservies.uzMainMenu(chatId));
