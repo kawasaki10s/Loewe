@@ -54,7 +54,7 @@ public class MyBot extends TelegramLongPollingBot {
 
             if (text.equals("\uD83D\uDCC8 Hamkorlik")){
                 try {
-                    execute(myBotservies.uzLangHamkorlik(chatId));
+                    execute(myBotservies.uzHamkorlik(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -741,6 +741,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+
 
             //ruscha
 

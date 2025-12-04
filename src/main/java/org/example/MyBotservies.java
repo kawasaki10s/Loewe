@@ -8,6 +8,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboardMar
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.InlineKeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardButton;
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -1960,7 +1961,7 @@ public class MyBotservies {
 
 
     // hamkorlik menu
-    public SendMessage uzLangHamkorlik(Long chatId) {
+    public SendMessage uzHamkorlik(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
         sendMessage.setText("Biz bilan hamkorlik uchun!!!");
@@ -1971,21 +1972,28 @@ public class MyBotservies {
         List<InlineKeyboardButton> row = new ArrayList<>();
         InlineKeyboardButton button = new InlineKeyboardButton();
         button.setText("\uD83D\uDCDE Biz bilan bog'lanish");
-        button.setCallbackData("UzBoglanishId");
+        button.setCallbackData("uzBoglanishId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
         button.setText("☎\uFE0F Bizning kontaktlarimiz");
-        button.setCallbackData("UzOurContactsId");
+        button.setCallbackData("uzOurContactsId");
         row.add(button);
         rowList.add(row);
 
         row = new ArrayList<>();
         button = new InlineKeyboardButton();
         button.setText("\uD83D\uDCCD Bizning manzillarimiz");
-        button.setCallbackData("UzLocationId");
+        button.setCallbackData("uzLocationId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzHamkorlikOrtgaId");
         row.add(button);
         rowList.add(row);
 
@@ -2056,8 +2064,12 @@ public class MyBotservies {
         KeyboardButton button = new KeyboardButton();
         button.setText("📱 Telefon raqamni yuborish");
         button.setRequestContact(true);
-
         row.add(button);
+        rowList.add(row);
+
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("⬅\uFE0F Ortga");
+        row.add(button1);
         rowList.add(row);
 
         replyKeyboardMarkup.setKeyboard(rowList);
@@ -2065,9 +2077,5 @@ public class MyBotservies {
 
         return sendMessage;
     }
-
-
-
-
 
 }
