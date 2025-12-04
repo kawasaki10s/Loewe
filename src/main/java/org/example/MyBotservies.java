@@ -2067,10 +2067,11 @@ public class MyBotservies {
         row.add(button);
         rowList.add(row);
 
+        KeyboardRow row1 = new KeyboardRow();
         KeyboardButton button1 = new KeyboardButton();
         button1.setText("⬅\uFE0F Ortga");
-        row.add(button1);
-        rowList.add(row);
+        row1.add(button1);
+        rowList.add(row1);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
