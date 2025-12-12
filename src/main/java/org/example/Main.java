@@ -14,7 +14,6 @@ public class Main {
             telegramBotsApi.registerBot(new MyBot());
 
             System.out.println("#RUNNING#");
-            System.out.println("IBO GIY");
 
         } catch (TelegramApiException e) {
             throw new RuntimeException(e);
