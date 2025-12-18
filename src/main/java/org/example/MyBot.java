@@ -1101,6 +1101,15 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            if (data.equals("uzKelibOlishId")){
+                try {
+                    execute(myBotservies.uzKelibOlish1(chatId));
+                    execute(myBotservies.uzKelibOlish2(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
 
             //ruscha
 

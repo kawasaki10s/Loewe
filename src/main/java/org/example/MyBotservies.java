@@ -1,5 +1,6 @@
 package org.example;
 
+import org.telegram.telegrambots.meta.api.methods.send.SendLocation;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
@@ -2713,8 +2714,41 @@ public class MyBotservies {
     public SendMessage uzPurchase(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Pulingiz yetmayapti :3");
+        sendMessage.setText("Buyurtmani olish yo'lini tanlang:");
+
+        InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
+        List<List<InlineKeyboardButton>> rowList = new ArrayList<>();
+
+        List<InlineKeyboardButton> row = new ArrayList<>();
+        InlineKeyboardButton button = new InlineKeyboardButton();
+        button.setText("\uD83D\uDE9A Yetkazib berish");
+        button.setCallbackData("uzYetkazibBerishId");
+        row.add(button);
+        rowList.add(row);
+
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("\uD83C\uDFEA Kelib olib ketish");
+        button.setCallbackData("uzKelibOlishId");
+        row.add(button);
+        rowList.add(row);
+
+        inlineKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
+    }
+    public SendMessage uzKelibOlish1(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("\uD83D\uDCCD Shu yerda bizning manzilimizga kelib mahsulotni olib keting");
+        return sendMessage;
+    }
+    public SendLocation uzKelibOlish2(Long chatId){
+        SendLocation sendLocation = new SendLocation();
+        sendLocation.setChatId(chatId);
+        sendLocation.setLatitude(40.7236413);
+        sendLocation.setLongitude(-74.0010634);
+        return sendLocation;
     }
     //end uz
 
@@ -5555,7 +5589,7 @@ public class MyBotservies {
     public SendMessage ruPurchase(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Pulingiz yetmayapti :3");
+        sendMessage.setText("");
         return sendMessage;
     }
     //end uz
@@ -5771,8 +5805,7 @@ public class MyBotservies {
 
 
     // Ingliz tili
-    //#################################################################################################################
-    // ERKINOV IBROHIMGA TOpSHIRISHTIRDIMDEE...
+    //################################################################################################################
 
 
 
