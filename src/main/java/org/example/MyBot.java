@@ -1110,6 +1110,14 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            if (data.equals("uzPurchaseOrtgaId")){
+                try {
+                    execute(myBotservies.uzKiyimlarMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
 
             //ruscha
 

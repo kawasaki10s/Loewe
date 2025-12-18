@@ -2733,6 +2733,13 @@ public class MyBotservies {
         row.add(button);
         rowList.add(row);
 
+        row = new ArrayList<>();
+        button = new InlineKeyboardButton();
+        button.setText("⬅\uFE0F Ortga");
+        button.setCallbackData("uzPurchaseOrtgaId");
+        row.add(button);
+        rowList.add(row);
+
         inlineKeyboardMarkup.setKeyboard(rowList);
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
