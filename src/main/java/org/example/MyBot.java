@@ -27,7 +27,6 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
             if (text.equals("\uD83D\uDC54 Kiyimlar")) {
                 try {
                     execute(myBotservies.uzKiyimlarMenu(chatId));
@@ -1117,12 +1116,35 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
-
+            if(data.equals("uzYetkazibBerishId")){
+                try {
+                    execute(myBotservies.contact(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
             //ruscha
 
 
             //inglisch
+        } else if (update.hasMessage() && update.getMessage().hasContact()) {
+            Long chatId = update.getMessage().getChatId();
+
+            try {
+                execute(myBotservies.Location(chatId));
+            } catch (TelegramApiException e) {
+                throw new RuntimeException(e);
+            }
+        } else if (update.hasMessage() && update.getMessage().hasLocation()) {
+            Long chatId = update.getMessage().getChatId();
+
+            try {
+                execute(myBotservies.Yetibkeladi(chatId));
+            } catch (TelegramApiException e) {
+                throw new RuntimeException(e);
+            }
+
         }
     }
 

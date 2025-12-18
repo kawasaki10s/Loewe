@@ -15,7 +15,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MyBotservies {
-
+    public SendMessage Yetibkeladi(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("\uD83D\uDD5Draxmat katta tez orada mahsulot yetib keladi.......");
+        return sendMessage;
+    }
     //Hodiie Rasmlar
     public SendPhoto UzHoodiePicture1(Long chatId) {
         SendPhoto sendPhoto = new SendPhoto();
@@ -2740,6 +2745,16 @@ public class MyBotservies {
         row.add(button);
         rowList.add(row);
 
+
+
+
+
+
+
+
+
+
+
         inlineKeyboardMarkup.setKeyboard(rowList);
         sendMessage.setReplyMarkup(inlineKeyboardMarkup);
         return sendMessage;
@@ -2880,7 +2895,38 @@ public class MyBotservies {
     }
 
 
+    public SendMessage contact(Long chatId) {
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("contact yuborishh");
 
+        // Keyboard
+        ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
+        replyKeyboardMarkup.setResizeKeyboard(true);
+
+        List<KeyboardRow> rowList = new ArrayList<>();
+        KeyboardRow row = new KeyboardRow();
+
+        KeyboardButton button = new KeyboardButton();
+        button.setText("Telefon raqamni yuborish");
+        button.setRequestContact(true);
+        row.add(button);
+        rowList.add(row);
+
+        replyKeyboardMarkup.setKeyboard(rowList);
+        sendMessage.setReplyMarkup(replyKeyboardMarkup);
+
+        return sendMessage;
+    }
+    public SendLocation Location(Long chatId) {
+        SendLocation sendLocation = new SendLocation();
+
+        sendLocation.setChatId(chatId);
+        sendLocation.setLatitude(42.2343623);
+        sendLocation.setLongitude(65.2150351);
+
+        return  sendLocation;
+    }
 
 
 
