@@ -433,6 +433,13 @@ public class MyBotservies {
         return sendPhoto;
     }
 
+    public SendMessage YaqindaIshgaTushadi(Long chatId){
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatId);
+        sendMessage.setText("Yaqinda ishga tushdi...");
+        return sendMessage;
+    }
+
 
     // text yozw uchun
 
@@ -443,10 +450,6 @@ public class MyBotservies {
         sendMessage.setText("Ushbu bot sizga 'Loewe' haqida kerakli ma'lumotlarni topishga va sizga kerakli mahsulotlarni topishga yordam beradi.");
         return sendMessage;
     }
-
-
-    //inline buttonlar uchun
-
 
     // O'zbekcha LANGUAGE MENU #########
     public SendMessage uzLangMenu(Long chatId) {
@@ -2898,7 +2901,7 @@ public class MyBotservies {
     public SendMessage contact(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("contact yuborishh");
+        sendMessage.setText("Bizga telefon raqamingizni yuboring:");
 
         // Keyboard
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
@@ -2912,6 +2915,12 @@ public class MyBotservies {
         button.setRequestContact(true);
         row.add(button);
         rowList.add(row);
+
+        KeyboardRow row1 = new KeyboardRow();
+        KeyboardButton button1 = new KeyboardButton();
+        button1.setText("⬅\uFE0F Ortga");
+        row1.add(button1);
+        rowList.add(row1);
 
         replyKeyboardMarkup.setKeyboard(rowList);
         sendMessage.setReplyMarkup(replyKeyboardMarkup);

@@ -27,6 +27,7 @@ public class MyBot extends TelegramLongPollingBot {
                     throw new RuntimeException(e);
                 }
             }
+
             if (text.equals("\uD83D\uDC54 Kiyimlar")) {
                 try {
                     execute(myBotservies.uzKiyimlarMenu(chatId));
@@ -54,6 +55,14 @@ public class MyBot extends TelegramLongPollingBot {
             if (text.equals("\uD83D\uDCC8 Hamkorlik")){
                 try {
                     execute(myBotservies.uzHamkorlik(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (text.equals("⬅\uFE0F Ortga")){
+                try {
+                    execute(myBotservies.uzMainMenu(chatId));
                 } catch (TelegramApiException e) {
                     throw new RuntimeException(e);
                 }
@@ -1109,14 +1118,7 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
-            if (data.equals("uzPurchaseOrtgaId")){
-                try {
-                    execute(myBotservies.uzKiyimlarMenu(chatId));
-                } catch (TelegramApiException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-            if(data.equals("uzYetkazibBerishId")){
+            if (data.equals("uzYetkazibBerishId")){
                 try {
                     execute(myBotservies.contact(chatId));
                 } catch (TelegramApiException e) {
@@ -1124,27 +1126,26 @@ public class MyBot extends TelegramLongPollingBot {
                 }
             }
 
+            if (data.equals("uzPurchaseOrtgaId")){
+                try {
+                    execute(myBotservies.uzKiyimlarMenu(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+
             //ruscha
+            if (data.equals("YaqindaIshgaTushadi")){
+                try {
+                    execute(myBotservies.YaqindaIshgaTushadi(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 
 
             //inglisch
-        } else if (update.hasMessage() && update.getMessage().hasContact()) {
-            Long chatId = update.getMessage().getChatId();
-
-            try {
-                execute(myBotservies.Location(chatId));
-            } catch (TelegramApiException e) {
-                throw new RuntimeException(e);
-            }
-        } else if (update.hasMessage() && update.getMessage().hasLocation()) {
-            Long chatId = update.getMessage().getChatId();
-
-            try {
-                execute(myBotservies.Yetibkeladi(chatId));
-            } catch (TelegramApiException e) {
-                throw new RuntimeException(e);
-            }
-
         }
     }
 
