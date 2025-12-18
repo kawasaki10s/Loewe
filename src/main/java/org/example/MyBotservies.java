@@ -2901,7 +2901,7 @@ public class MyBotservies {
     public SendMessage contact(Long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setChatId(chatId);
-        sendMessage.setText("Bizga telefon raqamingizni yuboring:");
+        sendMessage.setText("\uD83D\uDCF2 Bizga telefon raqamingizni yuboring:");
 
         // Keyboard
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();

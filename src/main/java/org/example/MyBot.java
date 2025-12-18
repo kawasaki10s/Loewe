@@ -1136,7 +1136,7 @@ public class MyBot extends TelegramLongPollingBot {
 
 
             //ruscha
-            if (data.equals("YaqindaIshgaTushadi")){
+            if (data.equals("РусскийId")){
                 try {
                     execute(myBotservies.YaqindaIshgaTushadi(chatId));
                 } catch (TelegramApiException e) {
@@ -1146,6 +1146,13 @@ public class MyBot extends TelegramLongPollingBot {
 
 
             //inglisch
+            if (data.equals("EnglishId")){
+                try {
+                    execute(myBotservies.YaqindaIshgaTushadi(chatId));
+                } catch (TelegramApiException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 
